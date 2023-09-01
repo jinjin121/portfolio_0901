@@ -1,0 +1,180 @@
+.body {
+    color: #333;
+}
+
+#header {
+    display: flex;
+    padding: 0 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+#header h1 {
+    width: 100px;
+}
+
+#header .gnb {
+    display: flex;
+    font-size: 30px;
+    font-weight: 500;
+    gap: 50px;
+}
+
+#header .gnb li:hover {
+    color: orange;
+}
+
+/* header */
+.slideBtn {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translate(0, -50%);
+    z-index: 999;
+}
+
+.slideBtn li a {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 30px;
+    font-size: 0;
+}
+
+.slideBtn li a::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 1px solid #333;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.slideBtn li.on a::after {
+    background: orange;
+}
+
+/* slideBtn */
+
+.section01 {
+    display: block;
+    position: relative;
+    height: 100vh;
+    background: #eee;
+}
+
+.sec01_wrap .sec01_img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    border: 10px solid orange;
+}
+
+.sec01_wrap .sec01_txt {
+    font-size: 60px;
+    font-weight: 900;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+.sec01_wrap .sec01_txt h2 span {
+    display: inline-block;
+    color: orange;
+}
+
+/* section01 */
+.section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    border: 1px solid;
+}
+
+.section .sec_left {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+.section .sec_left .portfolio_btn {
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+
+    outline: 5px solid orange;
+    color: orange;
+    background: #fdfdfd;
+    font-weight: 500;
+}
+
+.section .sec_left .portfolio_btn:hover {
+    color: #fdfdfd;
+    background: orange;
+    outline: none;
+}
+
+.portfolio_txt>ul>li>span {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.portfolio_txt>ul>li {
+    margin-bottom: 40px;
+}
+
+.portfolio_txt .tool {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.portfolio_txt .tool li span {
+    font-weight: 700;
+}
+
+.html_txt {
+    color: darkred;
+}
+
+.css_txt {
+    color: darkblue;
+}
+
+.js_txt {
+    color: #FFDD33;
+}
+
+.section .portfolio_img {
+    position: absolute;
+
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    border: 10px solid orange;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.section .portfolio_img img {
+    width: 960px;
+    height: 540px;
+}
